@@ -1,0 +1,12 @@
+def process_temperatures(temps):
+    converted = []
+    max_temp = max(temps)
+    for temp in temps:
+        fahrenheit = (temp * 9/5 - 32)
+        if fahrenheit > max_temp:
+            max_temp=fahrenheit
+        converted.append(fahrenheit)
+    return temps
+
+temps = [0, 25, 30, 20, 15]
+process_temperatures(temps)

@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ESOTERICA - Debug Challenge</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="top-bar">
+            <img src="{% static 'assets/logoesotericanew.png' %}" alt="ESOTERICA Logo" />
+            <div class="controls">
+                <select id="language-select">
+                    <option>C/C++</option>
+                    <option>Python</option>
+                    <option>JavaScript</option>
+                    <option>Java</option>
+                </select>
+                <button id="run-btn">
+                    <i class="fas fa-play"></i> Run
+                </button>
+            </div>
+        </header>
+
+        <div class="main-interface">
+            <div class="code-section">
+                <div class="section-header">
+                    <h2>Buggy Code</h2>
+                    <p>Start Debugging, cuz lookin at code with disappointment is not enough :P</p>
+                    <div class="header-controls"></div>
+                    <button id="set" class="reset-btn" title="set">
+                        <span>COPY</span>
+                    </button>
+                </div>
+                <div id="buggy-editor" class="bugquestion-container">
+                    <div class="navbar">
+                        <nav>
+                            <ul id="questionNav"></ul>
+                        </nav>
+                    </div>
+                    <div class="question-display">
+                        <p id="questionText">Select a question</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-section">
+                <div class="section-header">
+                    <h2>Your Fix</h2>
+                    <div class="header-controls">
+                    </div>
+                    <button id="save" class="save-btn" title="Save">
+                        <span>SAVE</span>
+                    </button>
+                </div>
+                <div id="fix-editor" class="code-editor"></div> 
+
+            </div>
+        </div>
+
+        <div class="output-section">
+            <div class="section-header">
+                <h2>Output</h2>
+                <button id="clear-btn" title="Clear">
+                    CLEAR
+                </button>
+            </div>
+            <div id="output-display"></div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/script_compiler.js' %}"></script>
+    <script src="{% static 'js/script_ui.js' %}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script> -->
+    <!-- <script src="{% static 'js/ace.js' %}"></script> -->
+    <script src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@wasmer/wasi/dist/wasmer-wasi.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@wasmer/wasmfs/dist/wasmfs.js"></script> -->
+</body>
+
+</html>

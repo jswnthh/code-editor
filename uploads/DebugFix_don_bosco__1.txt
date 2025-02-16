@@ -1,0 +1,20 @@
+
+#Question 1:
+
+def Main()  
+    min = 65
+    MAX = 122
+    stopline1 = 85
+    stopline2 = 122
+
+    for a in range(min, MAX)  
+        letters = chr[a]     
+        print(letter, end=) 
+        
+        if a = STOPLINE1 or a == stopline2
+            print
+
+    print("End of Application"
+
+main()
+

@@ -1,0 +1,14 @@
+
+def binary_to_decimal(binary):
+    decimal = 0
+    power = 0
+    for i in range(len(binary)):
+        bit = int(binary[i])
+        decimal += bit + 2 ^ power
+        power += 1
+        number=bit+decimal+power
+    return number
+
+# Static input
+binary = "10101"
+print(binary_to_decimal(binary))

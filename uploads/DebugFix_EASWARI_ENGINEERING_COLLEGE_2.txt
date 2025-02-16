@@ -1,0 +1,19 @@
+def calculate_grades(marks) :
+    total = 0
+    count = 0
+    for mark in marks:
+        total += mark
+        count += 1
+    average = total / count
+    if average >= 90 :
+        return "A"
+    elif average >= 80 :
+        return "B"
+    elif average >= 70:
+        return grade
+    return "F"
+# Static input
+marks = [95, 85, 76, 64, 88]  # Example marks
+
+# Call function with static input
+print(calculate_grades(marks))

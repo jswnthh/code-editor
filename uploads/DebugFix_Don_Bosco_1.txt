@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main() {
+    const int min = 65;   // ASCII value for 'A'
+    const int MAX = 122;   // ASCII value for 'z'
+    const int stopline1 = 85;  // ASCII value for 'U'
+    const int stopline2 = 122; // ASCII value for 'z'
+
+    // Loop through the range from min to MAX
+    for (int a = min; a <= MAX; a++) {
+        char letter = a;  // Convert the integer to a character
+        printf("%c ", letter);  // Print the character
+
+        // Check for stopping conditions
+        if (a == stopline1 || a == stopline2) {
+            break;  // Stop the loop when we reach stopline1 or stopline2
+        }
+    }
+
+    printf("End of Application\n");  // Print the end message
+}

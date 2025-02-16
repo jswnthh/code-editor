@@ -1,0 +1,16 @@
+def process_list(items):
+    result = []
+    for i in range(1, len(items)):
+        if items[i] > items[i-1]:
+            temp = items[0:i-1]
+            prev=items[i-1]
+            result.append(items[i] + prev)
+        elif items[i] < items[i-1]:
+            result.append(items[i] * 2)
+    return result[:]
+
+# Static input
+items = [5, 10, 3, 7, 8]
+
+# Call function with static input
+print(process_list(items))

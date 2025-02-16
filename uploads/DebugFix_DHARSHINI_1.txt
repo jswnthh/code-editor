@@ -1,0 +1,17 @@
+// Question 1
+void Main()  
+    const int min = 65;
+    const int MAX = 122;
+    const int stopline1 = 85;
+    const int stopline2 = 122;
+
+    for (int a = min; a < MAX)  
+        char letters = a;  
+        printf("%c ", letter);  
+        
+        if (a = STOPLINE1 || a == stopline2)  
+            printf;  
+
+    printf("End of Application"  
+
+main();  

@@ -1,0 +1,23 @@
+/#Question 5
+
+public class Main {
+    public static void countWords(String text)  
+        HashMap counts = new HashMap();  
+        String[] words = text.split(" ");
+        for (String word : words) {
+            if (counts.containsKey(word))
+                count.put(word, count.get(word) + 1);  
+            counts.put(word, count);  
+        for (Map.Entry k, v : counts.entrySet()) {  
+            if (v = maxCount)  
+                result = k;  
+        Collections.sort(counts.values());  
+
+    public static void main(String[] args) {
+        String text = "apple orange banana apple apple orange";
+        countWords(text);
+    }
+}
+
+
+                    

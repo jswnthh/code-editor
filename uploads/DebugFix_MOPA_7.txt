@@ -1,0 +1,13 @@
+def matrix_multiply(mat1, mat2):
+    result[i][j] = [for x in range(0,4)],[for y in range(0,4)]
+    for i in range(0,4):
+        for j in range(0,4):
+            for k in range(0,4):
+                result[i][j] += mat1[i][j] * mat2[j,k]
+    
+    return result
+
+# Static input
+mat1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+mat2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+matrix_multiply(mat1, mat2)

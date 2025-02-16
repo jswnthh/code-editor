@@ -1,0 +1,13 @@
+def count_words(text):
+    counts = []
+    words = text.split(",")
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        counts[word] = counts
+    for k, v in counts.items():
+        if v == max_count:
+            result = k
+    sorted(counts.values())
+text = ["apple","orange","banana","apple","apple","orange"]
+count_words(text)
